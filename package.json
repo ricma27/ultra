@@ -1,0 +1,15 @@
+{
+  "name": "extra",
+  "version": "0.1.0",
+  "description": "Ajout de fonctions personnalisées",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ricma27",
+  "license": "CC-BY-NC-SA-3.0",
+  "dependencies": {
+	"fs-extra": "^0.30.0",
+    "md5": "^2.2.1"
+  }
+}
