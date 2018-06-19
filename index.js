@@ -1,3 +1,4 @@
+var sonosGetDevices = require('./lib/sonosGetDevices.js');
 var sonosGetRandomPlaylist = require('./lib/sonosGetRandomPlaylist.js');
 var sonosPlayGoogleSpeak = require('./lib/sonosPlayGoogleSpeak.js');
 var sonosPlayMP3 = require('./lib/sonosPlayMP3.js');
@@ -8,11 +9,12 @@ var uninstall = require('./lib/uninstall.js');
 
 module.exports = function(sails) {
 	return {
+		sonosGetDevices: sonosGetDevices,	
 		sonosGetRandomPlaylist: sonosGetRandomPlaylist,	
 		sonosPlayGoogleSpeak: sonosPlayGoogleSpeak,		
 		sonosPlayMP3: sonosPlayMP3,
 		sonosPlayPlaylist: sonosPlayPlaylist,
-		sonosPlayRandomPlaylist: sonosPlayRandomPlaylist,		
+		sonosPlayRandomPlaylist: sonosPlayRandomPlaylist,	
 		install: install,
 		uninstall: uninstall
 	};
