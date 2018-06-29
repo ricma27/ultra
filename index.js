@@ -1,3 +1,4 @@
+var delay = require('./lib/delay.js');
 var hueBlink = require('./lib/hueBlink.js');
 var hueGetDevicesType = require('./lib/hueGetDevicesType.js');
 var hueOff = require('./lib/hueOff.js');
@@ -13,6 +14,7 @@ var uninstall = require('./lib/uninstall.js');
 
 module.exports = function(sails) {
 	return {
+		delay: delay,
 		hueBlink: hueBlink,
 		hueGetDevicesType: hueGetDevicesType,
 		hueOff: hueOff,
