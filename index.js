@@ -1,5 +1,6 @@
 var allDevicesOff = require('./lib/allDevicesOff.js');
 var delay = require('./lib/delay.js');
+var getRandomArrayElement = require('./lib/getRandomArrayElement.js');
 var hueBlink = require('./lib/hueBlink.js');
 var hueGetDevicesType = require('./lib/hueGetDevicesType.js');
 var hueOff = require('./lib/hueOff.js');
@@ -19,6 +20,7 @@ module.exports = function(sails) {
 	return {
 		allDevicesOff: allDevicesOff,
 		delay: delay,
+		getRandomArrayElement: getRandomArrayElement,
 		hueBlink: hueBlink,
 		hueGetDevicesType: hueGetDevicesType,
 		hueOff: hueOff,
