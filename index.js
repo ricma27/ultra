@@ -5,6 +5,7 @@ var hueGetDevicesType = require('./lib/hueGetDevicesType.js');
 var hueOff = require('./lib/hueOff.js');
 var hueOn = require('./lib/hueOn.js');
 var hueProgressiveBrightness = require('./lib/hueProgressiveBrightness.js');
+var hueRegressiveBrightness = require('./lib/hueRegressiveBrightness.js');
 var sonosGetDevices = require('./lib/sonosGetDevices.js');
 var sonosGetRandomPlaylist = require('./lib/sonosGetRandomPlaylist.js');
 var sonosPlayGoogleSpeak = require('./lib/sonosPlayGoogleSpeak.js');
@@ -22,7 +23,8 @@ module.exports = function(sails) {
 		hueGetDevicesType: hueGetDevicesType,
 		hueOff: hueOff,
 		hueOn: hueOn,
-		hueProgressiveBrightness: hueProgressiveBrightness,	
+		hueProgressiveBrightness: hueProgressiveBrightness,
+		hueRegressiveBrightness: hueRegressiveBrightness,
 		sonosGetDevices: sonosGetDevices,	
 		sonosGetRandomPlaylist: sonosGetRandomPlaylist,	
 		sonosPlayGoogleSpeak: sonosPlayGoogleSpeak,		
