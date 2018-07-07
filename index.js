@@ -1,10 +1,10 @@
 var allDevicesOff = require('./lib/allDevicesOff.js');
-var delay = require('./lib/delay.js');
-var reboot = require('./lib/reboot.js');
-var shutdown = require('./lib/shutdown.js');
+var arrayGetRandomElement = require('./lib/arrayGetRandomElement.js');
+var systemDelay = require('./lib/systemDelay.js');
+var systemReboot = require('./lib/systemReboot.js');
+var systemShutdown = require('./lib/systemShutdown.js');
 var chuckNorrisGetFact = require('./lib/chuckNorrisGetFact.js');
 var chuckNorrisGetLastFact = require('./lib/chuckNorrisGetLastFact.js');
-var getRandomArrayElement = require('./lib/getRandomArrayElement.js');
 var hueBlink = require('./lib/hueBlink.js');
 var hueGetDevicesType = require('./lib/hueGetDevicesType.js');
 var hueOff = require('./lib/hueOff.js');
@@ -23,12 +23,12 @@ var uninstall = require('./lib/uninstall.js');
 module.exports = function(sails) {
 	return {
 		allDevicesOff: allDevicesOff,
-		delay: delay,
-		reboot: reboot,
-		shutdown: shutdown,
+		arrayGetRandomElement: arrayGetRandomElement,
+		systemDelay: systemDelay,
+		systemReboot: systemReboot,
+		systemShutdown: systemShutdown,
 		chuckNorrisGetFact: chuckNorrisGetFact,
 		chuckNorrisGetLastFact: chuckNorrisGetLastFact,
-		getRandomArrayElement: getRandomArrayElement,
 		hueBlink: hueBlink,
 		hueGetDevicesType: hueGetDevicesType,
 		hueOff: hueOff,
