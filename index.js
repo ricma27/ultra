@@ -3,7 +3,7 @@ var arrayGetRandomElement = require('./lib/arrayGetRandomElement.js');
 var systemDelay = require('./lib/systemDelay.js');
 var systemReboot = require('./lib/systemReboot.js');
 var systemShutdown = require('./lib/systemShutdown.js');
-var chuckNorrisGetFact = require('./lib/chuckNorrisGetFact.js');
+var chuckNorrisGetNewFact = require('./lib/chuckNorrisGetNewFact.js');
 var chuckNorrisGetLastFact = require('./lib/chuckNorrisGetLastFact.js');
 var hueBlink = require('./lib/hueBlink.js');
 var hueGetDevicesType = require('./lib/hueGetDevicesType.js');
@@ -27,7 +27,7 @@ module.exports = function(sails) {
 		systemDelay: systemDelay,
 		systemReboot: systemReboot,
 		systemShutdown: systemShutdown,
-		chuckNorrisGetFact: chuckNorrisGetFact,
+		chuckNorrisGetNewFact: chuckNorrisGetNewFact,
 		chuckNorrisGetLastFact: chuckNorrisGetLastFact,
 		hueBlink: hueBlink,
 		hueGetDevicesType: hueGetDevicesType,
