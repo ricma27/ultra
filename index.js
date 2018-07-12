@@ -3,6 +3,7 @@ var chuckNorrisGetNewFact = require('./lib/chuckNorrisGetNewFact.js');
 var chuckNorrisGetLastFact = require('./lib/chuckNorrisGetLastFact.js');
 var getRandomElement = require('./lib/getRandomElement.js');
 var getRandomNumber = require('./lib/getRandomNumber.js');
+var installBackup = require('./lib/installBackup.js');
 var hueBlink = require('./lib/hueBlink.js');
 var hueGetDevicesType = require('./lib/hueGetDevicesType.js');
 var hueOff = require('./lib/hueOff.js');
@@ -28,6 +29,7 @@ module.exports = function(sails) {
 		chuckNorrisGetLastFact: chuckNorrisGetLastFact,
 		getRandomElement: getRandomElement,
 		getRandomNumber: getRandomNumber,
+		installBackup: installBackup,
 		hueBlink: hueBlink,
 		hueGetDevicesType: hueGetDevicesType,
 		hueOff: hueOff,
